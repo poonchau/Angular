@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h4 class="box-title">Update Record</h4>
+            <div class="box-tools pull-right">
+            </div>
+       </div>
+
+    <!-- <div class="row"> -->
+        <form #upRecords="ngForm"> <!--(ngSubmit)="onSubmit(records)" -->
+            <div class="row">
+                 <div class="col-md-4">
+                    <div class="form-group">
+                        &nbsp;&nbsp;&nbsp;<label>CustomerName</label>
+                        <input type="text" class="form-control" name="customer" placeholder="customer"
+                        required  [(ngModel)]="editdetail.customer" #customer="ngModel">
+                        <small style="color: brown;" *ngIf="customer.invalid && customer.touched">Please enter CustomerName!</small>
+                        <!-- <span class="help-block" *ngIf="customer.invalid && customer.touched">Please enter CustomerName!</span> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>UserName</label>
+                            <input type="text" class="form-control" name="user" placeholder="user" required
+                            [(ngModel)]="editdetail.user" #user="ngModel">
+                            <small style="color: brown;" *ngIf="user.invalid && user.touched">Please enter UserName!</small>
+                            <!-- <span class="help-block" *ngIf="user.invalid && user.touched">Please enter UserName!</span> -->
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>PhoneNo</label>
+                        <input type="text" class="form-control" name="phonenumber" placeholder="phonenumber"
+                        required  [(ngModel)]="editdetail.phonenumber" #phonenumber="ngModel">
+                        <small style="color: brown;" *ngIf="phonenumber.invalid && phonenumber.touched">Please enter PhoneNo!</small>
+                        <!-- <span class="help-block" *ngIf="phonenumber.invalid && phonenumber.touched">Please enter PhoneNo!</span> -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Passcode/Key</label>
+                        <input type="text" class="form-control" name="key" placeholder="key"
+                        required  [(ngModel)]="editdetail.key" #key="ngModel">
+                        <small style="color: brown;" *ngIf="key.invalid && key.touched">Please enter Key!</small>
+                        <!-- <span class="help-block" *ngIf="key.invalid && key.touched">Please enter Key!</span> -->
+                    </div>
+                </div>
+            </div> 
+        
+       
+    
+                <!-- <div class="row">
+                    <div class="col-md-4"> -->
+                        <div class="box-footer">
+                          
+                            <button type="submit" class="btn btn-primary" [disabled]="!upRecords.valid" (click)="onSave();">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- (onclick)="onSubmit(records)"-->
+                            
+                            <button type="submit" class="btn btn-info" (click)="onCancel();">Cancel</button>
+                          
+                        </div>
+                    <!-- </div>
+                </div>     -->
+  
+    
+        </form>
+     <!-- </div> -->
+  </div>
+</div>
+
+
+

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.content-wrapper .app-content.content {
+    padding: 0 .5rem;
+  }
+  
+  a + a {
+    margin-left: 3px;
+  } 

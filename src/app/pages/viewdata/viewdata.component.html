@@ -1,0 +1,39 @@
+<section class="content">
+    <div style="overflow-x:auto;">
+       <table datatable [dtOptions]="dtOption" [dtTrigger]="dtTriger" class="table table-bordered row-border hover"
+        style="width: 80%;">
+        <thead class="text-center thead-dark bg-navy"> 
+            <tr>
+            <!-- <th>Pkey</th> -->
+            <th>CustomerName</th>
+            <th>UserName</th>
+            <th>PhoneNo</th>
+            <th>Key</th>
+            <th>Action</th>
+           </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center" *ngFor="let emp of record">
+            <!-- <td>{{bdx.pkey}}</td> -->
+            <td>{{emp.filename}}</td>
+            <td>{{emp.location}}</td>
+            <td>{{emp.date}}</td>
+            <td>{{emp.position}}</td>
+            
+            <td style="width: 25%;">
+              <button type="button" class="btn btn-primary"><i
+                 class="fa fa-pencil-square-o"></i>Edit</button>&nbsp;
+              <button type="button" class="btn btn-danger"><i
+                 class="fa fa-trash-o"></i>Delete</button>
+            </td>
+          </tr>
+  
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  
+  
+  
+
